@@ -1,0 +1,18 @@
+.student { 
+    background: #f4f4f4;
+    margin: 8px;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+.student.enrolled {
+    border-left: 5px solid green;
+}
+.student.not-enrolled{
+    border-left: 5px solid red;
+}
+
+.student h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+<form class="add-form col" (ngSubmit)="onSubmit()">
+    <div class="form-group ">
+        <label for="studentId" class="form-label">Student Id:</label>
+        <div>
+            <input type="number" name="studentId" [(ngModel)]="studentId" id="studentId" placeholder="Add Student Id"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="name" class="form-label">Name: </label>
+        <div>
+            <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="Add Name"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="dateOfBirth">Date of Birth</label>
+        <div>
+            <input type="text" name="dateOfBirth" [(ngModel)]="dateOfBirth" id="dateOfBirth" placeholder="Add Date of Birth"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="gpa">GPA:</label>
+        <div>
+            <input type="number" name="gpa" [(ngModel)]="gpa" id="gpa" placeholder="Optional"/>
+        </div>
+    </div>
+    <div class="form-group form-control-check">
+        <label for="enrolled">Enrolled:</label>
+        <div>
+            <input type="checkbox" name="enrolled" [(ngModel)]="enrolled" id="enrolled" placeholder="Optional"/>
+        </div>
+    </div>
+    <input type="submit" value="Save Student" class="btn btn-block " [ngStyle]="{'background-color': 'black', 'color': 'white'}"/>
+</form>

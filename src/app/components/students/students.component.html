@@ -1,0 +1,7 @@
+<app-add-student *ngIf="showAddStudent" (onAddStudent)="addStudent($event)"></app-add-student>
+<app-student 
+    *ngFor="let student of students" 
+    [student]="student" 
+    (onDeleteStudent)="deleteStudent(student)" 
+    (onToggleEnrolled)="toggleEnrolled(student)">
+</app-student>

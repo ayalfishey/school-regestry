@@ -1,0 +1,14 @@
+<div [ngClass]="{'enrolled': student.enrolled , 'not-enrolled': !student.enrolled}" class="student" (dblclick)="onToggle(student)">
+    <h3>
+        {{student.name}} 
+        <fa-icon 
+            (click)="onDelete(student)"
+            [ngStyle]="{ color: 'red' }" 
+            [icon]="faTimes" 
+        ></fa-icon>
+    </h3>
+    <p>Id: {{student.studentId}}</p>
+    <p>Date of birth: {{student.dateOfBirth}}</p>
+    <p *ngIf="student.gpa !=null">GPA:  {{student.gpa}}</p>
+    <p>{{student.enrolled ? 'Enrolled' : 'Not enrolled'}}</p>
+</div>

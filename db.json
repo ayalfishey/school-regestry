@@ -1,0 +1,35 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "studentId": 23941,
+      "name": "Jimmy Rodrigez",
+      "dateOfBirth": "July 4th 1997",
+      "gpa": 3.3,
+      "enrolled": true
+    },
+    {
+      "id": 2,
+      "studentId": 223512,
+      "name": "Eric West",
+      "dateOfBirth": "September 18th 2001",
+      "gpa": 4,
+      "enrolled": false
+    },
+    {
+      "id": 3,
+      "studentId": 32356,
+      "name": "Kaladin Stormblessed",
+      "dateOfBirth": "January 22th 2003",
+      "enrolled": true
+    },
+    {
+      "id": 4,
+      "studentId": 234565,
+      "name": "Gorge Jungle",
+      "dateOfBirth": "March 1st 1995",
+      "gpa": 1.4,
+      "enrolled": true
+    }
+  ]
+}
